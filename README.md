@@ -1,3 +1,8 @@
+# GIF mostrando navegabilidad de la aplicación
+
+![preentrega2-navegabilidad](https://user-images.githubusercontent.com/62121011/206511458-8554485f-afdc-4e3d-9629-e820d38a62ad.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
