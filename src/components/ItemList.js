@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 const ItemList = ({ items }) => {
     return (
         <div>
-        <Row xs={1} md={4} className="g-4">
+        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
         {
             items.length > 0
             ? items.map(item => (

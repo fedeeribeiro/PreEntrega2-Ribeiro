@@ -3,8 +3,7 @@ const ItemDetail = ({ item }) => {
     return (
         <>
         {
-            item.image
-            ? <img src={item.image} alt=""/>
+            item ? <img src={item.image} alt="" style={{ width: '35%' }}/>
             : <p>Cargando...</p>
         }
         </>

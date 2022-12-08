@@ -7,8 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
     return (
-        <Navbar className="navbar-css" expand="lg" variant="dark" sticky="top">
-            <Container>
+        <Navbar className="navbar-css" expand="md" variant="dark" sticky="top">
                 <Navbar.Brand>
                     <Link to='/' style={{ textDecoration: 'none', color: '#fff' }}>
                         <img src={require("../images/logo-csa.jpg")} alt={"Logo"} width="50" height="50"/>
@@ -17,14 +16,15 @@ const NavBar = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="ms-auto">
                         <Nav.Link><Link to='/category/1' style={{ textDecoration: 'none', color: '#fff' }}>Pastas</Link></Nav.Link>
                         <Nav.Link><Link to='/category/2' style={{ textDecoration: 'none', color: '#fff' }}>Extras</Link></Nav.Link>
                         <Nav.Link><Link to='/category/3' style={{ textDecoration: 'none', color: '#fff' }}>Bebidas</Link></Nav.Link>
-                        <Nav.Link href="#carrito"><CartWidget/></Nav.Link>
+                        <Container>
+                            <Nav.Link href="#carrito"><CartWidget/></Nav.Link>
+                        </Container>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
         </Navbar>
     );
 }
