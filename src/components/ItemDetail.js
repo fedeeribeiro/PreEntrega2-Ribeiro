@@ -1,10 +1,28 @@
+import Card from 'react-bootstrap/Card';
+
 const ItemDetail = ({ item }) => {
 
     return (
         <>
         {
-            item ? <img src={item.image} alt="" style={{ width: '35%' }}/>
-            : <p>Cargando...</p>
+            item ? (
+                <Card style={{ width: '50rem' }} className='card-item-detail'>
+                    <Card.Img variant="top" src={item.image}/>
+                    <Card.Body className='card-body-item-detail'>
+                        <div>
+                            <Card.Title>{item.name}</Card.Title>
+                            <Card.Text>
+                                ${item.price}
+                            </Card.Text>
+                        </div>
+                        <div>
+                            <Card.Text>
+                                {item.description}
+                            </Card.Text>
+                        </div>
+                    </Card.Body>
+                </Card>
+            ) : <p>Cargando...</p>
         }
         </>
     );

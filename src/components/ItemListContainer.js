@@ -22,9 +22,9 @@ const ItemListContainer = () => {
     }, [categoryId]);
 
     return (
-        <>
-                    <ItemList items={data} />
-        </>
+        <div className='item-list-container'>
+            <ItemList items={data} />
+        </div>
     );
 }
 

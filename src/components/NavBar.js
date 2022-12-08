@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavBar = () => {
     return (
         <Navbar className="navbar-css" expand="md" variant="dark" sticky="top">
+            <Container>
                 <Navbar.Brand>
                     <Link to='/' style={{ textDecoration: 'none', color: '#fff' }}>
                         <img src={require("../images/logo-csa.jpg")} alt={"Logo"} width="50" height="50"/>
@@ -25,6 +26,7 @@ const NavBar = () => {
                         </Container>
                     </Nav>
                 </Navbar.Collapse>
+            </Container>
         </Navbar>
     );
 }
